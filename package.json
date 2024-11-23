@@ -1,0 +1,16 @@
+{
+  "name": "travel-itinerary-generator",
+  "version": "1.0.0",
+  "scripts": {
+    "install-frontend": "cd travel-itinerary-frontend && npm install",
+    "install-backend": "cd travel-itinerary-backend && npm install",
+    "install": "npm run install-frontend && npm run install-backend",
+    "frontend": "cd travel-itinerary-frontend && npm start",
+    "backend": "cd travel-itinerary-backend && npm start",
+    "dev": "npm run install && concurrently \"npm run backend\" \"npm run frontend\""
+  },  
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "react-scripts": "5.0.1"
+  }
+}
